@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<H1>TRIP TO GOA</H1>
+
+<body>
+
+    <!-- FORM BACK END LANGUAGE form.php  -->
+    <form action="form.php"></form>   
+
+    <!-- BASIC ENTRY  -->
+    <input type="text" placeholder="ENTER YOUR NAMR">
+    <br>
+    Enter your Name : <input type="text" >
+    <br>
+    <!-- RADIO BUTTON  -->
+    <label for="sectionida"> MARK YOUR SECTION 
+        <!-- name of the radio button must be same then only one can be selected at a time
+        id ---- must be unique but name should be same   -->
+        <input type="radio" value="Section A" name="Section" id="Sectionida"> Section A
+    </label>
+
+    <label for="sectionidb">
+        <input type="radio" value="Section B" name="Section" id="Sectionidb"> Section B
+    </label>
+
+    <label for="Sectionidc">
+        <input type="radio" value="Section C" name="Section" id="Sectionidc"> Section C
+    </label> <br>
+
+    <br>
+    <!-- CHOOSE FROM LIST  -->
+    <label for="TOURISTS SPOT">Choose your favouratie destination:</label>
+
+    <select name="places available" id="places">
+        <option value="">--Please choose an option--</option>
+        <option value="goa">goa</option>
+        <option value="ladakh"> ladakh</option>
+        <option value="manali">manali</option>
+    </select> <br><br>
+    your feedback
+ <TEXtarea name = suggestion id="suggestion" cols="20" rows="2" placeholder="any other suggestion" > </TEXtarea> <br>
+ <br>
+<!-- CHHOSE FILE  -->
+ <label for="avatar">Choose a profile picture:</label>
+
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+
+
+</body>
+
+</html>
